@@ -1,7 +1,6 @@
 "use strict";
 
 // DOM Elements
-
 const jokeText = document.querySelector(".joke-text");
 const audioPlayer = document.querySelector(".audio-player");
 const btnPlay = document.querySelector(".play-btn");
