@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+/* header */
+h1 {
+  margin: 5rem auto 15rem auto;
+  text-align: center;
+  font-size: 6rem;
+  color: #fff;
+  text-shadow: 4px 2px hsla(339, 69%, 38%, 0.4);
+  text-transform: uppercase;
+}
+
+/* Joke */
+.container {
+  display: flex;
+  width: 80vw;
+  min-height: 25rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(https://acegif.com/wp-content/gif/confetti-18.gif);
+  background-size: cover;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px hsla(339, 69%, 38%, 0.1);
+}
+
+p {
+  font-size: 3rem;
+  color: #1971c2;
+  min-height: 50%;
+  text-align: center;
+}
+
+/* buttons */
+
+.btn {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 2rem;
+  border-radius: 15px;
+  background-color: #4dabf7;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.btn:hover {
+  background-color: #1864ab;
+}
+
+.btn-container {
+  display: flex;
+  gap: 4rem;
+}
+.btn:disabled {
+  color: #fec5bb;
+  background-color: #1864ab;
+  cursor: default;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 97vw;
+    min-height: 22rem;
+    background-size: auto;
+    background-position: center;
+  }
+  p {
+    font-size: 2rem;
+    text-align: start;
+    min-height: 40%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+}
